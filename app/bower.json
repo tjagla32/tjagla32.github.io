@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "authors": [
+    "Tomasz Jagla <tjagla32@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "skeleton": "^2.0.4",
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "slick.js#^1.6.0",
+    "isotope": "^3.0.1",
+    "animate.css": "^3.5.2",
+    "wow": "wow.js#^1.1.2"
+  }
+}
