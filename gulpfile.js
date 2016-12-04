@@ -25,7 +25,7 @@ gulp.task('scripts', function(){
 
 gulp.task('style', function(){
   gulp.src(['app/bower_components/skeleton/css/skeleton.css',
-            'app/bower_components/font-awesome/scss/font-awesome.scss',
+            'app/fonts/font-awesome.css',
             'app/bower_components/slick-carousel/slick/slick.css',
             'app/bower_components/slick-carousel/slick/slick-theme.css',
             'app/bower_components/animate.css/animate.min.css',
@@ -40,17 +40,9 @@ gulp.task('style', function(){
   .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('minify', function() {
-  return gulp.src('app/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(rename('index.min.html'))
-    .pipe(gulp.dest('app'));
-});
-
 gulp.task('watch', function(){
   gulp.watch(['app/js/**/*.js', '!app/js/**/main*'], ['scripts']);
   gulp.watch('app/scss/**/*.scss', ['style']);
-  gulp.watch('app/*.html', ['minify']);
 });
 
-gulp.task('default', ['scripts', 'style', 'minify', 'watch']);
+gulp.task('default', ['scripts', 'style', 'watch']);

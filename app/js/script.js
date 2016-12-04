@@ -98,13 +98,5 @@ $(document).ready(function(){
 			//console.log(footerHeight);
 			$('.content').css('margin-bottom', footerHeight);
 
-			var st = $(this).scrollTop();
-			if (st > lastScrollTop){
-					$('header').css('position', 'absolute');
-			} else {
-				 $('header').css('position', 'fixed');
-			}
-			lastScrollTop = st;
-
 		});
 });

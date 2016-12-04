@@ -115,6 +115,11 @@
 #####################################################
 ####################################################*/
 @media (max-width: 750px) {
+  .home{
+    .see-more{
+      display: none;
+    }
+  }
   .focus{
     .focus-content{
       margin-bottom: 0;
@@ -210,6 +215,7 @@
       }
     }
     .see-more{
+      display: none;
       top: 70%;
       .underline{
         font-size: 18px;
