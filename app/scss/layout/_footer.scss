@@ -33,7 +33,8 @@ footer{
     position: absolute;
     bottom: 20px;
     right: 20px;
-    animation: bounce 2s infinite;
+    //animation: bounce 2s infinite;
+    @include mprefix(animation, bounce 2s infinite)
     a{
       text-decoration: none;
       i{
